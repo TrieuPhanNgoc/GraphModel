@@ -3,7 +3,7 @@
 
 int main() {
     // Demo for undirected graph -> we don't need to make reverse
-    auto graph = graph_api::getInstance(3);
+    auto graph = undirected_graph_api::getInstance(3);
     graph->init();
     graph->insertVertice(0, 1);
     graph->insertVertice(0, 2);

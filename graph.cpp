@@ -17,7 +17,8 @@ graph_api_interface::RetCode undirected_graph_api::insertVertice(const uint32_t&
 }
 
 graph_api_interface::RetCode undirected_graph_api::addVertices(const uint32_t& u, const uint32_t& v) {
-    if (u < 0 || u > m_size) {
+    if ((u < 0 || u >= m_size)
+    || (v < 0 || v >= m_size)) {
         return graph_api_interface::RetCode::FAILED;
     }
 

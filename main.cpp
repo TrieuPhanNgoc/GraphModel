@@ -8,6 +8,7 @@ int main() {
     graph->insertVertice(0, 1);
     graph->insertVertice(0, 2);
     graph->insertVertice(1, 2);
+    graph->insertVertice(3, 2);
     graph->printGraphic();
 
     return 0;
